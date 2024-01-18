@@ -1,0 +1,35 @@
+program CheckSentence;
+
+var
+  s: string;
+  i, j, k: integer;
+  ch: char;
+
+begin
+  
+  writeln('Enter a sentence (end with a point): ');
+  readln(s);
+
+  i := 0;
+  j := 0;
+  k := 0;
+
+  for ch in s do
+
+    i := i + 1;
+
+    if (ch = ' ') then
+      k := k + 1;
+
+    if (ch in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']) then
+      j := j + 1;
+  
+end;
+
+  k := k + 1;
+
+  writeln('Length of the sentence: ', i);
+  writeln('Number of words in the sentence: ', k);
+  writeln('Number of vowels in the sentence: ', j);
+
+end.
